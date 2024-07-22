@@ -32,3 +32,4 @@ def send_msg(text):
 
 
 send_msg(password_generator("GitHub", 25))
+
