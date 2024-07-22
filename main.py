@@ -15,23 +15,15 @@ def password_generator(name="Name", length=18) -> str:
             x = x + random.randint(0,9)
             
         else:
-<<<<<<< Updated upstream
-            
-            x = x + chr(random.randint(33, 126))
-    
-    x = f"{name}:{x}"  
-=======
-            y = chr(random.randint(32, 126))
+            y = chr(random.randint(33, 126))
             if y != "&" and y != "#":
-                x = x + y 
-                
+                x = x + y
+    
     x = f"""
 {name}:
 
 {x}
-
 """
->>>>>>> Stashed changes
     
     return x
 
@@ -43,11 +35,7 @@ def send_msg(text):
     url_req = "https://api.telegram.org/bot" + token + "/sendMessage" + "?chat_id=" + chat_id + "&text=" + text
     results = requests.get(url_req)
     print(results.json())
+    
 
 
-<<<<<<< Updated upstream
-=======
-
-
-
->>>>>>> Stashed changes
+send_msg(password_generator("Instagram", 100))
