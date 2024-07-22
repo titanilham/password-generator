@@ -17,7 +17,7 @@ def password_generator(name="Name", length=18) -> str:
         else:
             x = x + chr(random.randint(33, 126))
     
-    x = f"{name}: {x}"  
+    x = f"{name}:{x}"  
     
     return x
 
@@ -33,7 +33,6 @@ def send_msg(text):
 
 
 send_msg(password_generator("Vk", 20))
-
-
-
-
+send_msg(password_generator("Telegram", 18))
+send_msg(password_generator("Instagram", 19))
+send_msg(password_generator("GitHub", 25))
