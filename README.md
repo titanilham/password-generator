@@ -10,24 +10,19 @@
 
 <br>
 
-<h2>Preview:<h2/>
-<img src="" title="Preview"/>
+<h2>Preview:</h2>
+<img src="https://github.com/titanilham/password-generator/blob/main/src/preview.png?raw=true" title="Preview"/>
   
-## Installing and running 
+ 
 
-### install repository:
+### Install repository:
 ```
-git clone https://github.com/titanilham/Neofetch-in-windows.git
+git clone https://github.com/titanilham/password-generator.git
 ```
 
 ### Module installation:                                                                              
 ```
 pip install -r requirements.txt
-```
-
-### run:
-```
-python main.py
 ```
 
 ---
