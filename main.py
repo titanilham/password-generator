@@ -40,4 +40,4 @@ def send_msg(text):
     
 
 
-send_msg(password_generator("Instagram", 100))
+send_msg(password_generator("GitHub", 25))
