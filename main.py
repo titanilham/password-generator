@@ -15,9 +15,11 @@ def password_generator(name="Name", length=18) -> str:
             x = x + random.randint(0,9)
             
         else:
-            y = chr(random.randint(33, 126))
+            y = chr(random.randint(32, 126))
             if y != "&" and y != "#":
                 x = x + y
+            else:
+                x = x + str(random.randint(0,9))
     
     x = f"""
 {name}:
@@ -38,4 +40,4 @@ def send_msg(text):
     
 
 
-send_msg(password_generator("Instagram", 100))
+send_msg(password_generator("Telegram", 18))
