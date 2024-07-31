@@ -4,7 +4,7 @@ import config
 
 
 def password_generator(name="Name", length=18) -> str:
-    
+    """Password generation function"""
     
     x = ''
     
@@ -29,7 +29,8 @@ def password_generator(name="Name", length=18) -> str:
     
     return x
 
-def send_msg(text):
+def send_msg(text: str) -> None:
+    """Send messages function"""
     
     token = config.token  #Bot token 
     chat_id = config.chat_id  # Сhat where passwords will be sent 
@@ -40,4 +41,4 @@ def send_msg(text):
     
 
 
-send_msg(password_generator("GitHub", 25))
+send_msg(password_generator("GitHub", 30))
